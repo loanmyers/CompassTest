@@ -1,0 +1,40 @@
+
+
+
+.grid-container {
+    width: 		100%;
+    max-width: 	$max-width; 
+    box-sizing: border-box;
+}
+
+/*-- our cleafix hack -- */ 
+.row:before, .row:after {
+    content:	"";
+    display:	table ;
+    clear:		both;
+}
+
+@for $i from 1 through $max-cols {
+	.col-#{$i} {
+		float: 		left;
+    	min-height:	1px; 
+    	width:		($max-width / $max-cols) * $i; 
+        height:     $max-height / 4;
+	}
+}
+
+.outline, .outline *{
+    outline: 1px solid #F6A1A1; 
+}
+
+/*-- some extra column content styling --*/
+@for $i from 1 through $max-cols {
+    .col-#{$i} > p {
+        background-color: #FFC2C2; 
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+        color: white;    
+        margin: 24px;     
+    }
+}
