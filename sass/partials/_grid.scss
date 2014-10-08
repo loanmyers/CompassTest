@@ -1,11 +1,25 @@
 
 
 
+
+// @mixin respond-to($media) {
+//     @if $media == handhelds {
+//         @media only screen and (max-width: $break-small) { @content; }
+//     }
+//     @else if $media == medium-screens {
+//         @media only screen and (min-width: $break-medium + 1) and (max-width: $break-large - 1) { @content; }
+//     }
+//     @else if $media == wide-screens {
+//         @media only screen and (min-width: $break-large) { @content; }
+//     }
+// }
+
+
 .grid-container {
-    width: 		100%;
-    max-width: 	$max-width; 
+    width: 		$width; 
     box-sizing: border-box;
 }
+
 
 /*-- our cleafix hack -- */ 
 .row:before, .row:after {
@@ -14,27 +28,40 @@
     clear:		both;
 }
 
-@for $i from 1 through $max-cols {
+
+@for $i from 1 through $grid-cols {
 	.col-#{$i} {
 		float: 		left;
-    	min-height:	1px; 
-    	width:		($max-width / $max-cols) * $i; 
-        height:     $max-height / 4;
+    	min-height:	1px;
+    	width:		($width / $grid-cols) * $i; 
+        height:     $height / 4;
+
+        p {
+            background-color: $choir1; 
+            padding: 0;
+            margin: 0;
+            text-align: center; 
+            color: white;    
+            margin: 24px;                 
+        } 
+
 	}
 }
+
 
 .outline, .outline *{
     outline: 1px solid #F6A1A1; 
 }
 
-/*-- some extra column content styling --*/
-@for $i from 1 through $max-cols {
-    .col-#{$i} > p {
-        background-color: #FFC2C2; 
-        padding: 0;
-        margin: 0;
-        text-align: center; 
-        color: white;    
-        margin: 24px;     
-    }
-}
+
+// /*-- some extra column content styling --*/
+// @for $i from 1 through $grid-cols {
+//     .col-#{$i} > p {
+//         background-color: #FFC2C2; 
+//         padding: 0;
+//         margin: 0;
+//         text-align: center; 
+//         color: white;    
+//         margin: 24px;     
+//     }
+// }

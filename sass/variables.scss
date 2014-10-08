@@ -1,15 +1,34 @@
-
+// media queries
+$break-small:	320px;
+$break-medium:	1024px;
+$break-large: 	1440px;
 
 
 // grid
+$width: 		75vw;
 $max-width:		100vw;
-$max-cols:		7;
-$max-height: 	100vh;
+$height: 		100vh;
+$grid-cols:		1;
+
+@include respond-to(wide-screens) { $grid-cols: 7; }
+@include respond-to(medium-screens) { $grid-cols: 3; }
+@include respond-to(handhelds) { $grid-cols: 1; }
+
+
+
 
 // typography
 
 
 // colours
-
+$soloist:		red;
+$choir1:		blue;
+$choir2:		green;
+$choir3:		purple;
+$choir4:		black;
 
 // ratios
+$headers:		1;
+$subheaders:	1.333;
+$text:			$subheaders;
+$images:		1.5; 

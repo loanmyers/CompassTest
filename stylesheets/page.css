@@ -4,151 +4,40 @@ html, body, ul, ol {
   padding: 0;
 }
 
-/* line 4, ../sass/partials/_grid.scss */
+/* line 18, ../sass/partials/_grid.scss */
 .grid-container {
-  width: 100%;
-  max-width: 100vw;
+  width: 75vw;
   box-sizing: border-box;
 }
 
 /*-- our cleafix hack -- */
-/* line 11, ../sass/partials/_grid.scss */
+/* line 25, ../sass/partials/_grid.scss */
 .row:before, .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 18, ../sass/partials/_grid.scss */
+/* line 33, ../sass/partials/_grid.scss */
 .col-1 {
   float: left;
   min-height: 1px;
-  width: 14.28571vw;
+  width: 75vw;
   height: 25vh;
 }
-
-/* line 18, ../sass/partials/_grid.scss */
-.col-2 {
-  float: left;
-  min-height: 1px;
-  width: 28.57143vw;
-  height: 25vh;
+/* line 39, ../sass/partials/_grid.scss */
+.col-1 p {
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+  margin: 24px;
 }
 
-/* line 18, ../sass/partials/_grid.scss */
-.col-3 {
-  float: left;
-  min-height: 1px;
-  width: 42.85714vw;
-  height: 25vh;
-}
-
-/* line 18, ../sass/partials/_grid.scss */
-.col-4 {
-  float: left;
-  min-height: 1px;
-  width: 57.14286vw;
-  height: 25vh;
-}
-
-/* line 18, ../sass/partials/_grid.scss */
-.col-5 {
-  float: left;
-  min-height: 1px;
-  width: 71.42857vw;
-  height: 25vh;
-}
-
-/* line 18, ../sass/partials/_grid.scss */
-.col-6 {
-  float: left;
-  min-height: 1px;
-  width: 85.71429vw;
-  height: 25vh;
-}
-
-/* line 18, ../sass/partials/_grid.scss */
-.col-7 {
-  float: left;
-  min-height: 1px;
-  width: 100vw;
-  height: 25vh;
-}
-
-/* line 26, ../sass/partials/_grid.scss */
+/* line 52, ../sass/partials/_grid.scss */
 .outline, .outline * {
   outline: 1px solid #F6A1A1;
-}
-
-/*-- some extra column content styling --*/
-/* line 32, ../sass/partials/_grid.scss */
-.col-1 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
-}
-
-/* line 32, ../sass/partials/_grid.scss */
-.col-2 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
-}
-
-/* line 32, ../sass/partials/_grid.scss */
-.col-3 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
-}
-
-/* line 32, ../sass/partials/_grid.scss */
-.col-4 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
-}
-
-/* line 32, ../sass/partials/_grid.scss */
-.col-5 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
-}
-
-/* line 32, ../sass/partials/_grid.scss */
-.col-6 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
-}
-
-/* line 32, ../sass/partials/_grid.scss */
-.col-7 > p {
-  background-color: #FFC2C2;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: white;
-  margin: 24px;
 }
 
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
